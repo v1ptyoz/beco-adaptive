@@ -1,0 +1,150 @@
+.card {
+  width: 268px;
+  height: 130px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px #c4c4c4;
+  position: relative;
+  border: none;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.card:hover {
+  outline: 1px solid #DF212D;
+}
+
+.card:hover::before {
+  border-bottom: 1px solid #DF212D;
+  border-right: 1px solid #DF212D;
+  left: -2px;
+}
+
+.card:hover::after {
+  border-top: 1px solid #DF212D;
+  border-left: 1px solid #DF212D;
+  right: -7.5px;
+}
+
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: linear-gradient(315deg, #c4c4c4 0%, #ffffff 100%);
+  border-radius: 1px;
+  transform: rotate(-45deg) translateY(-50%);
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.card::after {
+  left: auto;
+  right: -6.5px;
+  border-bottom: none;
+  border-right: none;
+  background: linear-gradient(135deg, #c4c4c4 0%, #ffffff 100%);
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+
+.card__content {
+  padding: 16px 20px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__header {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 16px;
+}
+
+.card__header h3 {
+  font-size: 1.2rem;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.card__header p {
+  line-height: 16px;
+  color: #808080;
+}
+
+.card__info span {
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #DF212D;
+  text-transform: uppercase;
+}
+
+.card__info p {
+  font-size: 1.2rem;
+  line-height: 16px;
+  color: #808080;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+.card__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 89px;
+  overflow: hidden;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card__image picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 296px;
+    height: 144px;
+  }
+  .card__image {
+    width: 104px;
+  }
+  .card__header h3,
+  .card__header p {
+    font-size: 1.4rem;
+  }
+  .card__header h3 {
+    margin-bottom: 4px;
+  }
+  .card__info span {
+    font-size: 3.6rem;
+  }
+  .card__info p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 347px;
+    height: 161px;
+  }
+  .card__header h3,
+  .card__header p {
+    font-size: 1.6rem;
+  }
+  .card__image {
+    width: 130px;
+  }
+}
