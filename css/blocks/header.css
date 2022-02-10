@@ -1,7 +1,20 @@
 .header {
   padding-bottom: 30px;
   padding-top: 38px;
+  background: #ffffff;
   border-bottom: 1px solid #E5E5E5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 70;
+}
+
+.header--fixed {
+  padding-top: 30px;
+  padding-left: 50px;
+}
+.header--fixed h1 {
+  display: none;
 }
 
 .header__wrapper {
@@ -10,6 +23,8 @@
   gap: 20px;
   align-items: flex-end;
 }
+
+
 
 @media screen and (min-width: 768px) {
   .header__wrapper {
