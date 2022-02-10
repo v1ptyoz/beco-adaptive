@@ -19,5 +19,6 @@
 @media screen and (min-width: 1440px) {
   .header__wrapper {
     padding-left: 60px;
+    align-items: flex-start;
   }
 }
