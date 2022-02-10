@@ -1,0 +1,11 @@
+.header {
+  padding: 28px 30px;
+  padding-top: 38px;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
