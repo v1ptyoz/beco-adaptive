@@ -36,7 +36,7 @@
   fill: #333333
 }
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 768px) {
   .sidebar {
     max-width: 246px;
     left: 0px;
@@ -60,7 +60,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1440px) {
   .sidebar {
     width: 240px;
   }

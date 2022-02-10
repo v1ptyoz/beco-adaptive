@@ -17,13 +17,13 @@
   font-size: 1.4rem;
 }
 
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 768px) {
   .logo__text {
     display: none;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1440px) {
   .logo {
     gap: 10px;
   }
