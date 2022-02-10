@@ -6,3 +6,9 @@
   flex-wrap: wrap;
   gap: 15px;
 }
+
+@media screen and (min-width: 1440px) {
+  .cards {
+    padding-left: 20px;
+  }
+}
