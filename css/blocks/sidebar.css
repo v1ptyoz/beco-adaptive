@@ -9,9 +9,16 @@
 
 .sidebar__wrapper {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sidebar__logo {
@@ -26,14 +33,21 @@
   position: absolute;
   right: -48px;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sidebar__menu button {
   border: none;
   cursor: pointer;
+  background: transparent;
 }
 
 .sidebar__menu svg {
@@ -47,16 +61,21 @@
   }
   .sidebar__logo {
     padding-left: 0;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .sidebar--opened .nav__list {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .sidebar--opened .nav__item span {
     display: block;
   }
   .sidebar--opened .sidebar__logo {
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     padding-left: 21px;
   }
   .sidebar--opened .logo__text {
@@ -73,7 +92,8 @@
   }
   .sidebar__logo {
     padding-left: 40px;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 

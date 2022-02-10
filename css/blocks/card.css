@@ -2,12 +2,17 @@
   width: 268px;
   height: 130px;
   border-radius: 10px;
-  box-shadow: 0px 2px 6px #c4c4c4;
+  -webkit-box-shadow: 0px 2px 6px #c4c4c4;
+          box-shadow: 0px 2px 6px #c4c4c4;
   position: relative;
   border: none;
   background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "Roboto", sans-serif;
   z-index: 100;
   cursor: pointer;
@@ -38,9 +43,12 @@
   display: block;
   width: 7px;
   height: 7px;
+  background: -o-linear-gradient(135deg, #c4c4c4 0%, #ffffff 100%);
   background: linear-gradient(315deg, #c4c4c4 0%, #ffffff 100%);
   border-radius: 1px;
-  transform: rotate(-45deg) translateY(-50%);
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+      -ms-transform: rotate(-45deg) translateY(-50%);
+          transform: rotate(-45deg) translateY(-50%);
   border-bottom: 1px solid transparent;
   border-right: 1px solid transparent;
 }
@@ -50,6 +58,7 @@
   right: -6.5px;
   border-bottom: none;
   border-right: none;
+  background: -o-linear-gradient(315deg, #c4c4c4 0%, #ffffff 100%);
   background: linear-gradient(135deg, #c4c4c4 0%, #ffffff 100%);
   border-top: 1px solid transparent;
   border-left: 1px solid transparent;
@@ -58,12 +67,19 @@
 .card__content {
   padding: 16px 20px;
   padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card__header {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   font-size: 1.2rem;
   line-height: 16px;
 }
@@ -109,7 +125,8 @@
 .card__image picture {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
