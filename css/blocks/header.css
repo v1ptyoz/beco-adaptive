@@ -1,5 +1,5 @@
 .header {
-  padding: 28px 30px;
+  padding-bottom: 30px;
   padding-top: 38px;
 }
 
@@ -11,16 +11,13 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    padding-left: 100px;
-  }
   .header__wrapper {
     gap: 30px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .header {
+  .header__wrapper {
     padding-left: 60px;
   }
 }
