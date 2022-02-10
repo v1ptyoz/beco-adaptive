@@ -31,7 +31,6 @@
   border-left: 2px solid transparent;
 }
 
-.nav__item a:hover,
 .nav__item--active a{
   border-left: 2px solid #34ABE0;
 }
