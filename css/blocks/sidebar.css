@@ -80,3 +80,11 @@
 .sidebar--opened {
   left: 0;
 }
+
+.sidebar--opened .sidebar__menu .nav__icon--menu{
+  display: none;
+}
+
+.sidebar--opened .sidebar__menu .nav__icon--close {
+  display: block;
+}

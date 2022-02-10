@@ -10,6 +10,10 @@
   height: 24px;
 }
 
+.nav__icon--close {
+  display: none;
+}
+
 .nav__item {
   padding: 20px 0;
 }
